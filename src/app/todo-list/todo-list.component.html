@@ -1,0 +1,16 @@
+<div class="mx-4" *ngFor="let note of todoArr; let i=index">
+    <div class="alert alert-primary" role="alert">
+        <div class="row">
+            <div class="col-7 col-md-7">
+                <label>{{note}}</label>
+            </div>
+            <div class="col-2 col-md-2">
+                <button class="btn btn-primary">Edit</button>
+            </div>
+            <div class="col-2 col-md-2">
+                <button class="btn btn-danger" (click)="delete(i)">Delete</button>
+            </div>
+        </div>
+
+    </div>
+</div>
